@@ -26,7 +26,6 @@ services:
       # - /usr/src/app/node_modules
     ports:
       - ${SERVER_PORT}:${SERVER_PORT}
-      - ${PROXY_PORT}:${PROXY_PORT}
     # This command will trigger the service, which in the development context
     # means running it with live reloading. But we also need to set the volumes
     # below.
@@ -34,5 +33,17 @@ services:
     # This env file must be in the same directory of the current
     # docker-compose.yml. 
     env_file: .env
+    depends_on:
+      - db
+    networks:
+      - internal-network
+
+  db:
+    container_name: db
+    build: ./db
+    restart: always
+    env_file: .env
+    ports:
+      - 5432:5432
     networks:
       - internal-network
