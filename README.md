@@ -1,7 +1,7 @@
 # Stefanini's Backend Challenge
 
 ## Running
-To run te project you will need [Docker](https://www.docker.com/) and a UNIX-based environment.
+To run te project you will need [Docker](https://www.docker.com/) and a UNIX-based environment able to run some [bash commands and scripts](https://www.gnu.org/software/bash/).
 ```console
 $ git clone https://github.com/fbaltor/challenge-stefanini
 $ cd challenge-stefanini
