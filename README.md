@@ -29,7 +29,7 @@ $ ./test.sh
 
 ## Explanation
 
-This repository solves the challenge of Stefanini's recruitment process. The project goal was to create a backend to retrieve some data from a [BACEN API](https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios) and persist it. Specifically, the API should be able to receive incoming requests with a date and then fetch the dollar rate and save it to a database in the following format:
+This repository solves the challenge of Stefanini's recruitment process. The project goal is to create a backend to retrieve some data from a [BACEN API](https://dadosabertos.bcb.gov.br/dataset/dolar-americano-usd-todos-os-boletins-diarios) and persist it. Specifically, the API should be able to receive incoming requests with a date and then fetch the dollar rate and save it to a database in the following format:
 
 - Dollar buy price
 - Dollar sell price
